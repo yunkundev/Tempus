@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#efefef">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/info18" />
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+	<ProgressBar
+	    android:id="@+id/pbOverallTask"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/info19" />
+
+        <TextView
+            android:id="@+id/textViewNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/pbCurrentTask"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="　励志小贴士" />
+
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/textViewMotto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:background="@drawable/shape"
+           	android:paddingBottom="10dp"  
+          	android:layout_marginRight="5dp"
+            android:paddingTop="10dp"
+            android:id="@+id/button_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/info20" />
+
+        <Button
+            android:background="@drawable/shape"
+           	android:paddingBottom="10dp"  
+          	android:layout_marginRight="5dp"
+            android:paddingTop="10dp"
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/info21" />
+
+        <Button
+            android:background="@drawable/shape"
+           	android:paddingBottom="10dp"  
+          	android:layout_marginRight="5dp"
+            android:paddingTop="10dp"
+            android:id="@+id/button_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info22" 
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+   
+</LinearLayout>

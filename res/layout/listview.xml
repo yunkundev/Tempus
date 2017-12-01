@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="5dip"
+  android:descendantFocusability="blocksDescendants" 
+  android:background="#ffffff"
+  >
+  
+  <ImageView
+    android:contentDescription="@string/info29"
+    android:id="@+id/ItemImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+  />
+  
+  
+  <!--
+      把按钮背景设置为透明:     android:background="#00000000"
+      把按钮背景设置为半透明:     android:background="#e0000000"
+      -->
+  <ImageButton
+      android:contentDescription="@string/info26"
+      android:id="@+id/ItemCloseWin"
+      android:layout_alignParentRight="true"
+      android:layout_alignTop="@+id/ItemWinName"
+      android:layout_alignBottom="@+id/ItemWinName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"    
+		 android:background="#00000000"
+      android:gravity="left|center_vertical"
+      android:focusable="false"
+      android:src="@android:drawable/ic_menu_close_clear_cancel"
+  />
+  
+  <TextView
+      android:id="@+id/ItemWinName"
+      
+      android:layout_toRightOf="@+id/ItemImage"
+      android:layout_toLeftOf="@+id/ItemCloseWin"
+      android:layout_alignTop="@+id/ItemImage"
+      android:layout_alignBottom="@+id/ItemImage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#000000"
+      android:textStyle="bold"
+      android:gravity="left|center_vertical"
+      android:textSize="20sp"
+      android:text="@string/info27"
+  />
+  
+  
+    <TextView
+      android:id="@+id/ItemTime"
+      android:layout_alignLeft="@+id/ItemWinName"  
+      android:layout_below="@+id/ItemWinName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"     
+      android:gravity="left|center_vertical"
+      android:textSize="12sp"
+      android:text="@string/info28"
+  />
+    
+   
+</RelativeLayout>

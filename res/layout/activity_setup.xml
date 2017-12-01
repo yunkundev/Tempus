@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/timeSelect" />
+
+        <Spinner
+            android:id="@+id/spinnerTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gettask" />
+
+        <Spinner
+            android:id="@+id/spinnerTask"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="座右铭" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutUpper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editTextMotto"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_gravity="fill"
+                android:layout_marginTop="14dp"
+                android:layout_weight="12.38"
+                android:ems="10"
+                android:hint="在这里加句鼓励自己的话吧~"
+                android:lines="1"
+                android:maxLines="1"
+                android:textSize="@dimen/emotion_item_view_height" />
+
+            <Button
+            android:background="@drawable/shape"
+           	android:paddingBottom="5dp"  
+          	android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+                android:id="@+id/buttonAddMotto"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_weight="1"
+                android:text="添加" />
+
+            <Button
+                            android:background="@drawable/shape"
+           	android:paddingBottom="5dp"  
+          	android:layout_marginRight="5dp"
+            android:paddingTop="5dp"
+                android:id="@+id/buttonSubMotto"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_weight="0.66"
+                android:text="删除" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/listMotto"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_weight="1" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <Button
+                android:background="@drawable/shape"
+           		android:paddingBottom="10dp"  
+          		android:layout_marginRight="5dp"
+            	android:paddingTop="10dp"
+                android:id="@+id/buttonsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/saveSet" />
+
+            <Button
+                android:background="@drawable/shape"
+           	    android:paddingBottom="10dp"  
+          	    android:layout_marginRight="5dp"
+                android:paddingTop="10dp"
+                android:id="@+id/buttonrecover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/recover" />
+        </LinearLayout>
+    </LinearLayout>
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" 
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

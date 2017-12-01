@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#efefef"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:background="#ffffff"
+	    android:gravity="center" >
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:text="@string/app_name"
+		    android:textColor="#000000"
+		    android:textSize="20sp"
+		    android:textStyle="bold" />
+        
+    </RelativeLayout>
+    
+	<ScrollView 
+ android:layout_width="fill_parent" 
+ android:layout_height="fill_parent"> 
+  <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/textView110"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text= "最近任务执行情况"
+          android:textSize="@dimen/splash_test_top_margin_top" />
+    
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    
+    
+    <TextView
+        android:id="@+id/textView1c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　预计执行时间：　" />
+
+    <TextView
+        android:id="@+id/textViewPlanTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　　－:－"
+        android:textColor="#000000" />
+    
+        <TextView
+        android:id="@+id/textView1111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/textView2c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　实际执行时间：" />
+   
+    <TextView
+        android:id="@+id/textViewDoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　　－:－"
+        android:textColor="#000000" />
+    
+       <TextView
+        android:id="@+id/textView1112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <TextView
+        android:id="@+id/textView3c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　有效时间：　　　" />    
+        
+    <TextView
+        android:id="@+id/textViewValueTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　　－:－"
+        android:textColor="#000000" />
+  
+            <TextView
+        android:id="@+id/textView1113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <TextView
+        android:id="@+id/textView4c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　有效比例：　　　　" />
+
+    <TextView
+        android:id="@+id/textViewPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　　－％"
+        android:textColor="#000000" />
+  
+            <TextView
+        android:id="@+id/textView1114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView6c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　是否完成任务：" />
+
+    <TextView
+        android:id="@+id/textViewTaskComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　　－"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView1115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView7c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　执行日期：" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　　－"
+        android:textColor="#000000" />
+  
+    <TextView
+        android:id="@+id/textView128"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　" />
+
+
+ 
+   </LinearLayout>
+</ScrollView>
+</LinearLayout>

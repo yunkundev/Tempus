@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomDialog"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    android:background="#00ffffff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape2" >
+        
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="150dip"
+        android:background="#ffffff"
+        android:minHeight="40.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="282dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/planTimeLong"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinnerPlanHour"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinnerPlanMinute"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/txtPlanName"
+        android:text="@string/info2"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/info1"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/txtPlanName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:hint=""
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/txtPlanDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/txtPlanName"
+        android:layout_below="@+id/txtPlanName"
+        android:ems="10"
+        android:hint=""
+        android:textSize="12sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <SeekBar
+        android:id="@+id/seekbarImportance"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPlanDesc"
+        android:layout_alignRight="@+id/txtPlanDesc"
+        android:layout_below="@+id/txtPlanDesc" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekbarImportance"
+        android:layout_alignRight="@+id/textView2"
+        android:text="@string/info3"
+        android:textColor="#000000" />
+
+    <SeekBar
+        android:id="@+id/seekbarUrgency"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/seekbarImportance"
+        android:layout_alignRight="@+id/seekbarImportance" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbarImportance"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/seekbarUrgency"
+        android:text="@string/info4"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_bar_layout"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/checkboxSplitable"
+        android:text="@string/info5"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/checkboxSplitable"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/seekbarUrgency"
+        android:layout_below="@+id/bottom_bar_layout"
+        android:text="@string/info7"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_i"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekbarImportance"
+        android:layout_alignParentRight="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_u"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekbarUrgency"
+        android:layout_alignParentRight="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_below="@+id/checkboxSplitable"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/yes"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_alignBaseline="@+id/btn_ok"
+        android:layout_alignBottom="@+id/btn_ok"
+        android:layout_toLeftOf="@+id/textView_u"
+        android:background="@drawable/shape"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/no"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+	
+</RelativeLayout>
+</LinearLayout>

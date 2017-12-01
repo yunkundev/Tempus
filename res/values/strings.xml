@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainTabActivity!</string>
+    <string name="app_name">Tempus</string>
+    <string name="main_plan">计划</string>
+    <string name="main_census">统计</string>
+    <string name="main_setup">设置</string>
+    <string name="main_start">执行</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="info1">计划名称  </string>
+    <string name="info2">计划描述  </string>
+    <string name="info3">重要指数 </string>
+    <string name="info4">紧要指数  </string>
+    <string name="info5">计划性质  </string>
+    <string name="info6">执行条件 </string>
+    <string name="info7">允许多次完成  </string>
+    <string name="info8">手动添加  </string>
+    <string name="info9">自动生成  </string>
+    <string name="info10">清空</string>
+    <string name="info11">执行</string>
+    <string name="info12">优先程度</string>
+    <string name="info13">任务时长</string>
+    <string name="info14">加入表单</string>
+    <string name="info15">取消加入</string>
+    <string name="info17">选择计划</string>
+    <string name="info18">总任务执行</string>
+    <string name="info19">当前任务执行</string>
+    <string name="info20">开始</string>
+    <string name="info21">暂停/继续</string>
+    <string name="info22">退出</string>
+    <string name="info23">重要优先</string>
+    <string name="info24">紧急优先</string>
+    <string name="info25">适中</string>
+    <string name="info26">ImageButton</string>
+    <string name="info27">text</string>
+    <string name="info28">time</string>
+    <string name="info29">ImageView</string>
+    <string name="timeSelect">时间方案</string>
+    <string name="gettask">任务分配方案</string>
+    
+    <string name="recover">恢复默认</string>
+    <string name="saveSet">保存设置</string>
+    
+    <string name="colon">:</string>
+    <string name="planTimeLong">计划时长</string>             
+</resources>
